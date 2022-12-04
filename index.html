@@ -21,9 +21,29 @@
         }
 
     </style>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-250970952-1');
+        </script>
+    
 </head>
 <body>
     <form action="link.html">
+        <script>
+            /**
+            * The following event is sent when the page loads. You could
+            * wrap the event in a JavaScript function so the event is
+            * sent when the user performs some action.
+            */
+            gtag('event', 'screen_view', {
+              'app_name': 'myAppName',
+              'screen_name': 'Home'
+            });
+          </script>
+          
 
         <h1 align="center">Welcome To My Website</h1>
         <br><br>
