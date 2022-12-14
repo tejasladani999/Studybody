@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{background-color:rgb(70, 147, 223)}
+  </style>   
+  <title>Document</title>
+     <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
+
+  <!-- fonts style -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" /> -->
+  <!-- Custom styles for this template -->
+  <!-- <link href="css/style.css" rel="stylesheet" /> -->
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-250970952-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,63 +28,49 @@
 
   gtag('config', 'UA-250970952-1');
 </script>
+<script>
+  //Event tracking code
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <style>
-        body {
-            background: linear-gradient(30deg, dodgerblue, white, pink);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        h2{color: brown;}
-        h3{color: blue;}
-        
-        .button1{background-color: pink;
-        color: black;
-        font-style: bold;
-        }
-
-    </style>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'UA-250970952-1');
-        </script>
-    
+  gtag('config', 'UA-250970952-1');
+  </script>
 </head>
 <body>
-    <form action="link.html">
-        <script>
-            /**
-            * The following event is sent when the page loads. You could
-            * wrap the event in a JavaScript function so the event is
-            * sent when the user performs some action.
-            */
-            gtag('event', 'screen_view', {
-              'app_name': 'myAppName',
-              'screen_name': 'Home'
-            });
-          </script>
-          
-
-        <h1 align="center">Welcome To My Website</h1>
-        <br><br>
-        <marquee direction="left to right"><h2>To download Study Material Click on download Button</h2> </marquee> 
-    
-        <img src="a.jpg" height="400" width="500"/>
-       
-        <br><br>
-        <br><br>
-        <input type="submit" value="Download">
-    
-    
-        <Marquee><h3> Thank You For Visiting Our Website...</h3> </marquee> 
-    </form>
-
-    
-
-
-
+  <script>
+    gtag("event","MCA Students",{});
+  </script>
+  <br>
+  <br>
+  <br>
+    <h1 align="center">Welcome to <i>Studybody</i> Word </h1>
+      <table align="center" border=".2" cellpadding="10" cellspacing="2">
+        <tr>
+          <th> <img src="MCA-1.jpg"/ width="25%" hight="20%" alt=MCA-1></th>
+          <th> <img src="MCA-2.jpg"/ width="25%" hight="20%" alt=MCA-2></th>
+          <th> <img src="MCA-3.jpg"/ width="25%" hight="20%" alt=MCA-3></th>
+          <th> <img src="MCA-4.jpg"/ width="25%" hight="20%" alt=MCA-4></th>  
+        </tr>
+        <tr>
+          <th><a href="mca1.html"><button id="mca1">MCA-1</button></a></th>
+          <th><a href="mca2.html"><button id="mca2">MCA-2</button></a></th>
+          <th><a href="mca3.html"><button id="mca3">MCA-3</button></a></th>
+          <th><a href="mca4.html"><button id="mca4">MCA-4</button></a></th>
+         </tr>
+         <script>
+           document.getElementById("mca1").addEventListener("click", function () {
+            gtag("event", "MCA-1", {});
+        });
+        document.getElementById("mca2").addEventListener("click", function () {
+            gtag("event", "MCA-2", {});
+        });
+        document.getElementById("mca3").addEventListener("click", function () {
+            gtag("event", "MCA-3", {});
+        });
+        document.getElementById("mca4").addEventListener("click", function () {
+            gtag("event", "MCA-4", {});
+        });
+         </script>
 </body>
 </html>
